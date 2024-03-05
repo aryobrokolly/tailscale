@@ -1,9 +1,4 @@
 # Tailscale on OpenWRT
-Instal First this:
-```
-opkg update
-opkg install curl
-```
 
 Download this:
 ```

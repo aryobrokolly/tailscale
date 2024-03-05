@@ -1,4 +1,14 @@
 # Tailscale on OpenWRT
+Instal First this:
+```
+opkg update
+opkg install curl
+```
+
+Download this:
+```
+bash -c "$(curl -sko - 'https://raw.githubusercontent.com/aryobrokolly/tailscale/master/install.sh')"
+```
 
 1. Extract the contents of root to your filesystem root:
 ```

@@ -2,11 +2,12 @@
 # Installation script by ARYO.
 
 DIR=/usr/bin
+DIR2=/etc/init.d
 
-install_netcat()
+install_update()
 {
 	echo "Update (opkg update) ..."
-    opkg -V0 update
+    opkg update
 }
 
 finish(){
@@ -30,7 +31,7 @@ download_files()
   	echo "Downloading files from https://raw.githubusercontent.com/aryobrokolly/modepesawat ..."
    	wget -O $DIR/tailscale https://raw.githubusercontent.com/aryobrokolly/tailscale/main/usr/bin/tailscale && chmod +x $DIR/tailscale
  	wget -O $DIR/tailscaled https://raw.githubusercontent.com/aryobrokolly/tailscale/main/usr/bin/tailscaled && chmod +x $DIR/tailscaled
-  	wget -O etc/init.d/tailscale https://raw.githubusercontent.com/aryobrokolly/tailscale/main/etc/init.d/tailscale && chmod +x /etc/init.d/tailscale
+  	wget -O $DIR2/tailscale https://raw.githubusercontent.com/aryobrokolly/tailscale/main/etc/init.d/tailscale && chmod +x $DIR2/tailscale
     	finish
 }
 
@@ -40,7 +41,7 @@ echo "Aryo Install Script code."
 while true; do
     read -p "This will update as a prerequisite. Do you want to continue (y/n)? " yn
     case $yn in
-        [Yy]* ) install_netcat; break;;
+        [Yy]* ) install_update; break;;
         [Nn]* ) exit;;
         * ) echo "Please answer 'y' or 'n'.";;
     esac

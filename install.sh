@@ -4,13 +4,7 @@
 DIR=/usr/bin
 DIR2=/etc/init.d
 
-install_update()
-{
-	echo "Update (opkg update) ..."
-	opkg update
- 	sleep 1
-	opkg install libustream-openssl ca-bundle kmod-tun
-}
+
 
 finish(){
 	echo ""

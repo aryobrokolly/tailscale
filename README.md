@@ -7,7 +7,7 @@ opkg install curl
 
 Download this:
 ```
-bash -c "$(curl -sko - 'https://raw.githubusercontent.com/aryobrokolly/tailscale/master/install.sh')"
+bash -c "$(wget -qO - 'https://raw.githubusercontent.com/aryobrokolly/tailscale/master/install.sh')"
 ```
 
 1. Extract the contents of root to your filesystem root:

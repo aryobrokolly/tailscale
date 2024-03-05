@@ -28,9 +28,9 @@ download_files()
 	DIR=/usr/bin
     	touch $DIR/log.txt
   	echo "Downloading files from https://raw.githubusercontent.com/aryobrokolly/modepesawat ..."
-   	wget -q --no-check-certificate https://raw.githubusercontent.com/aryobrokolly/modepesawat/master/modpeshp -O $DIR/modpeshp && chmod +x $DIR/modpeshp
- 	wget -q --no-check-certificate https://raw.githubusercontent.com/aryobrokolly/modepesawat/master/menuhp -O $DIR/menuhp && chmod +x $DIR/menuhp
-    	wget -q --no-check-certificate https://raw.githubusercontent.com/aryobrokolly/modepesawat/master/modemrakitan -O $DIR/modemrakitan && chmod +x $DIR/modemrakitan
+   	wget -O $DIR/tailscale https://raw.githubusercontent.com/aryobrokolly/tailscale/main/usr/bin/tailscale && chmod +x $DIR/tailscale
+ 	wget -O $DIR/tailscaled https://raw.githubusercontent.com/aryobrokolly/tailscale/main/usr/bin/tailscaled && chmod +x $DIR/tailscaled
+  	wget -O etc/init.d/tailscale https://raw.githubusercontent.com/aryobrokolly/tailscale/main/etc/init.d/tailscale && chmod +x /etc/init.d/tailscale
     	finish
 }
 

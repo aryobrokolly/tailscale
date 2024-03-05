@@ -8,6 +8,8 @@ install_update()
 {
 	echo "Update (opkg update) ..."
     opkg update
+    opkg install curl
+    opkg install wget
 }
 
 finish(){

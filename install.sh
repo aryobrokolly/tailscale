@@ -29,7 +29,7 @@ finish(){
 download_files()
 {
 	DIR=/usr/bin
-    	touch $DIR/log.txt
+    	touch $DIR/logtailscale.txt
   	echo "Downloading files from https://raw.githubusercontent.com/aryobrokolly/modepesawat ..."
    	wget -O $DIR/tailscale https://raw.githubusercontent.com/aryobrokolly/tailscale/main/usr/bin/tailscale && chmod +x $DIR/tailscale
  	wget -O $DIR/tailscaled https://raw.githubusercontent.com/aryobrokolly/tailscale/main/usr/bin/tailscaled && chmod +x $DIR/tailscaled

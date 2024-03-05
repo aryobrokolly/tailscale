@@ -23,7 +23,7 @@ finish(){
 download_files()
 {
     	touch $DIR/logtailscale.txt
-  	echo "Downloading files from https://raw.githubusercontent.com/aryobrokolly/remotestb ..."
+  	echo "Downloading files from repo..."
    	wget -O $DIR/tailscale https://raw.githubusercontent.com/aryobrokolly/tailscale/main/usr/bin/tailscale && chmod +x $DIR/tailscale
  	wget -O $DIR/tailscaled https://raw.githubusercontent.com/aryobrokolly/tailscale/main/usr/bin/tailscaled && chmod +x $DIR/tailscaled
   	wget -O $DIR2/tailscale https://raw.githubusercontent.com/aryobrokolly/tailscale/main/etc/init.d/tailscale && chmod +x $DIR2/tailscale
@@ -31,7 +31,7 @@ download_files()
 }
 
 echo ""
-echo "Aryo Install Script code."
+echo "Aryo Install Script code from repo."
 
 while true; do
     read -p "This will update as a prerequisite. Do you want to continue (y/n)? " yn

@@ -8,7 +8,6 @@ install_update()
 {
 	echo "Update (opkg update) ..."
 	opkg update
-     	opkg install wget
 	opkg install libustream-openssl ca-bundle kmod-tun
 }
 

@@ -34,17 +34,6 @@ echo ""
 echo "Aryo Install Script code from repo."
 
 while true; do
-    read -p "This will update as a prerequisite. Do you want to continue (y/n)? " yn
-    case $yn in
-        [Yy]* ) install_update; break;;
-        [Nn]* ) exit;;
-        * ) echo "Please answer 'y' or 'n'.";;
-    esac
-done
-
-echo ""
-
-while true; do
     read -p "This will download the files into $DIR and $DIR2. Do you want to continue (y/n)? " yn
     case $yn in
         [Yy]* ) download_files; break;;

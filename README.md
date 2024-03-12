@@ -34,10 +34,14 @@ ls /etc/rc.d/S*tailscale*
 
 5. To update the version of tailscale, grab the latest version [here](https://pkgs.tailscale.com/stable/#static) of the form `1.2.10_mips` and replace the same in `/usr/bin/tailscale` and `/usr/bin/tailscaled`: `version="1.2.10_mips"`.
 
-6. Login Akun tailscale
+6. Login Account tailscale
 ```
 service tailscale restart
 tailscale up --netfilter-mode=off
 ```
 
 Note: You need to have atleast 11+16 = ~27 MB of free space in `/tmp` (which is usually in RAM) to be able to use this.
+
+#Donate
+
+<img src="https://github.com/aryobrokolly/XRAY-MPORT/blob/26495331210caf0380909a4478a7b3721e04124c/img/qris.jpg" alt="DONASI" width="350" height="470">

@@ -7,8 +7,7 @@ bash -c "$(wget -qO - 'https://raw.githubusercontent.com/aryobrokolly/tailscale/
 
 1. Install the prerequisites for wget and tailscale:
 ```
-opkg update
-opkg install libustream-openssl ca-bundle kmod-tun
+opkg update && opkg install libustream-openssl ca-bundle kmod-tun
 ```
 
 2. Run tailscale for the first time:
